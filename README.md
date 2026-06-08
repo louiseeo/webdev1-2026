@@ -34,13 +34,14 @@ I am a first-year Web Development student who is interested in learning how to b
 1. Learn other programming languages.
 2. Improve at programming.
 3. Build my own portfolio website.
-4. Become a professional web developer.
+4. Learn to repair gadgets.
 
 ## Favorite Websites
 
 * https://www.google.com
-* https://www.github.com
+* https://www.netflix.com
 * https://www.ilovepdf.com
+* https://www.mp3juice.com
 
 ## Contact Information
 
