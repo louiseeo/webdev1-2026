@@ -27,9 +27,9 @@ I am a first-year information technology student who is interested in learning m
 
 ### Soft Skills
 
-* Communication
 * Curiosity
 * Responsibility
+* Time Management
 
 ## My Goals
 
