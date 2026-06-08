@@ -2,7 +2,7 @@
 
 ## About Me
 
-I am a first-year information technology student who is interested in learning many things about technology.
+I am a first-year Information Technology student who is interested in learning many things about technology.
 
 ## Basic Information
 
