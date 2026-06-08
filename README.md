@@ -2,7 +2,7 @@
 
 ## About Me
 
-I am a first-year Web Development student who is interested in learning how to build websites and web applications.
+I am a first-year information technology student who is interested in learning many things about technology.
 
 ## Basic Information
 
@@ -15,7 +15,9 @@ I am a first-year Web Development student who is interested in learning how to b
 
 ## My Interests
 
-* Web Development
+* Movies
+* Music
+* Games
 
 ## Skills
 
