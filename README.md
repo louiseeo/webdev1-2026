@@ -31,8 +31,8 @@ I am a first-year Web Development student who is interested in learning how to b
 
 ## My Goals
 
-1. Master Programming
-2. Build a good portfolio that can power my resume
+1. Learn other programming languages.
+2. Improve at programming.
 3. Build my own portfolio website.
 4. Become a professional web developer.
 
@@ -40,7 +40,7 @@ I am a first-year Web Development student who is interested in learning how to b
 
 * https://www.google.com
 * https://www.github.com
-* https://www.ilovepdf.com/
+* https://www.ilovepdf.com
 
 ## Contact Information
 
@@ -49,4 +49,4 @@ I am a first-year Web Development student who is interested in learning how to b
 
 ## Fun Fact
 
-My favorite fruit is mango and I always 
+I love mangoes.
