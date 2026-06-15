@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+h1,
+h2 {
+    color: rgb(33, 57, 71);
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: #3a82ca;
+}
+
+.feature-card {
+    background-color: white;
+    border: 1px solid #3a82ca;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.text-highlight {
+    font-weight: bold;
+    color: maroon;
+}
+
+nav a:hover {
+    color: white;
+    background-color: yellowgreen;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#hero {
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    background-color: #cfe5fa;
+}
+
+input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: rgb(33, 57, 71);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
