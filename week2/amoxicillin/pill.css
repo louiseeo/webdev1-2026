@@ -1,0 +1,27 @@
+.tag {
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 6px 14px;
+    border-radius: 28px;
+}
+
+#tag-html {
+    background: #FF686B;
+    color: white;
+}
+
+#tag-css {
+    background: #4ecdc4;
+    color: white;
+}
+
+#tag-js {
+    background: #ffe66d;
+    color: #333;
+}
+
+#tag-py {
+    background: #a8e6cf;
+    color: #333;
+}
