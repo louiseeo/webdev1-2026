@@ -1,0 +1,55 @@
+.quote-card {
+            background: #fff8f0;
+            border-left: 6px solid #f97316;
+            padding: 24px 28px;
+            max-width: 300px;
+            border-radius: 0 8px 8px 0;
+            font-family: Georgia, serif;
+        }
+
+        blockquote {
+            font-size: 1rem;
+            color: #1c1917;
+            font-style: italic;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        cite {
+            font-style: normal;
+            font-family: Arial, sans-serif;
+            font-size: 0.78rem;
+            color: #78716c;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .stats {
+            display: flex;
+            background: #1e1b4b;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .stat {
+            flex: 1;
+            text-align: center;
+            padding: 20px 16px;
+            border-right: 1px solid #312e81;
+        }
+
+        .num {
+            display: block;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #a5b4fc;
+            margin-bottom: 4px;
+        }
+
+        .label {
+            display: block;
+            font-size: 0.7rem;
+            color: #818cf8;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
