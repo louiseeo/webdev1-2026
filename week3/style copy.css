@@ -1,0 +1,262 @@
+/* 1. Evenly Spaced Row */
+.container-one {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container-one .box {
+    width: 100px;
+    height: 80px;
+    background-color: #ffffff;
+    border: 1px solid #dde3ed;
+    border-bottom: 3px solid #b8c8e8;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #b0bdd0;
+}
+
+/* 2. Centered Vertical Stack */
+.container-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-two .box {
+    width: 100px;
+    height: 80px;
+    background-color: #ffffff;
+    border: 1px solid #dde3ed;
+    border-bottom: 3px solid #b8c8e8;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #b0bdd0;
+}
+
+/* 3. Bottom-Aligned Row */
+.container-three {
+    display: flex;
+    align-items: flex-end;
+}
+
+.container-three .box {
+    width: 100px;
+    background-color: #ffffff;
+    border: 1px solid #dde3ed;
+    border-bottom: 3px solid #b8c8e8;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #b0bdd0;
+}
+
+.box.short {
+    height: 40px;
+}
+
+.box.tall {
+    height: 100px;
+}
+
+.box.medium {
+    height: 65px;
+}
+
+/* 4. Wrapping Card Grid */
+.container-four {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.container-four .card {
+    width: 100px;
+    height: 80px;
+    background-color: #ffffff;
+    border: 1px solid #dde3ed;
+    border-bottom: 3px solid #b8c8e8;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #b0bdd0;
+}
+
+/* 5. Wrapped Rows, Spaced Apart  */
+.container-five {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    /* width: 360px; sample for testing
+    height: 220px;   sample for testing */
+}
+
+.container-five .card {
+    width: 155px;
+    height: 80px;
+    background-color: #ffffff;
+    border: 1px solid #dde3ed;
+    border-bottom: 3px solid #b8c8e8;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #b0bdd0;
+}
+
+/* 6. Navbar Pattern */
+.container-six {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 1px solid #dde3ed;
+    border-bottom: 3px solid #b8c8e8;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    color: #b0bdd0;
+}
+
+.links {
+    width: 110px;
+    height: 30px;
+    background-color: #ffffff;
+    border: 1px solid #dde3ed;
+    border-bottom: 3px solid #b8c8e8;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    color: #b0bdd0;
+}
+
+.cta {
+    width: 60px;
+    height: 35px;
+    background-color: #ffffff;
+    border: 1px solid #dde3ed;
+    border-bottom: 3px solid #b8c8e8;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    color: #b0bdd0;
+}
+
+/* 7. Reversed Order Row */
+.container-seven {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.container-seven .box {
+    width: 100px;
+    height: 80px;
+    background-color: #ffffff;
+    border: 1px solid #dde3ed;
+    border-bottom: 3px solid #b8c8e8;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #b0bdd0;
+}
+
+/* 8. Centered Column, Spaced Items */
+.container-eight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-eight .box {
+    height: 60px;
+    background-color: #ffffff;
+    border: 1px solid #dde3ed;
+    border-bottom: 3px solid #b8c8e8;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #b0bdd0;
+}
+
+.box.small {
+    width: 60px;
+}
+
+.box.wide {
+    width: 140px;
+}
+
+.box.medium {
+    width: 100px;
+}
+
+/* 9. Evenly Gapped Row, Left-Packed */
+.container-nine {
+    display: flex;
+    gap: 20px;
+}
+
+.container-nine .box {
+    width: 100px;
+    height: 80px;
+    background-color: #ffffff;
+    border: 1px solid #dde3ed;
+    border-bottom: 3px solid #b8c8e8;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #b0bdd0;
+}
+
+/* 10. Right-Aligned, Top-Packed Wrap */
+.container-ten {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: flex-start;
+    /* width: 360px; for testing
+    height: 200px; for testing */
+}
+
+.container-ten .card {
+    width: 90px;
+    height: 80px;
+    background-color: #ffffff;
+    border: 1px solid #dde3ed;
+    border-bottom: 3px solid #b8c8e8;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #b0bdd0;
+}
