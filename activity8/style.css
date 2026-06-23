@@ -1,0 +1,90 @@
+body {
+    font-family: sans-serif;
+}
+
+/* 1. Profile card */
+.container-one {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 200px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #f1f3f5;
+} 
+
+.badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background-color: #218bff;
+    border-radius: 50%;
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #2d3436;
+    margin-bottom: 7px;
+}
+
+.job {
+    font-size: 0.75rem;
+    color: #636e72;
+    letter-spacing: 1px;
+}
+
+/* 2. Pricing Card Row */
+.container-two {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+    margin: 4px auto;
+}
+
+.box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 40px 24px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid #f1f3f5;
+}
+
+.category {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #8a8d93;
+    letter-spacing: 1.5px;
+}
+.price {
+    font-size: 2.25rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+.price .month {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #a0a5ad;
+}
