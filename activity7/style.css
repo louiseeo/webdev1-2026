@@ -1,11 +1,11 @@
 /* 1. Evenly Spaced Row */
-.container-one {
+.container {
     display: flex;
     justify-content: space-evenly;
 }
 
 /* 2. Centered Vertical Stack */
-.container-two {
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,40 +13,40 @@
 }
 
 /* 3. Bottom-Aligned Row */
-.container-three {
+.container {
     display: flex;
     align-items: flex-end;
 }
 
 /* 4. Wrapping Card Grid */
-.container-four {
+.container {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
 
 /* 5. Wrapped Rows, Spaced Apart  */
-.container-five {
+.container {
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
 }
 
 /* 6. Navbar Pattern */
-.container-six {
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 /* 7. Reversed Order Row */
-.container-seven {
+.container {
     display: flex;
     flex-direction: row-reverse;
 }
 
 /* 8. Centered Column, Spaced Items */
-.container-eight {
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,15 +54,81 @@
 }
 
 /* 9. Evenly Gapped Row, Left-Packed */
-.container-nine {
+.container {
     display: flex;
     gap: 20px;
 }
 
 /* 10. Right-Aligned, Top-Packed Wrap */
-.container-ten {
+.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     align-content: flex-start;
 }
+
+/* 11. Layout A */
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+/* 12. Layout B */
+.container {
+    display: flex;
+    flex-flow: column;
+}
+
+/* 13. Layout C */
+.container {
+    display: flex;
+    align-items: flex-end;
+}
+
+/* 14. Layout D */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* 15. Layout E */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between; 
+    align-content: space-between;
+}
+
+/* 16. Layout F */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* 17. Layout G */
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* 18. Layout H */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 19. Layout I */
+.container {
+    display: flex;
+}
+
+/* 20. Layout J */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
