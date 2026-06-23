@@ -1,7 +1,7 @@
 /* 1. Evenly Spaced Row */
 .container-one {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .container-one .box {
@@ -22,8 +22,8 @@
 .container-two {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 12px;
 }
 
 .container-two .box {
@@ -75,8 +75,7 @@
 .container-four {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    width: 360px;
+    gap: 30px;
 }
 
 .container-four .card {
@@ -98,8 +97,8 @@
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
-    width: 360px;
-    height: 220px;
+    /* width: 360px; sample for testing
+    height: 220px;   sample for testing */
 }
 
 .container-five .card {
@@ -191,7 +190,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 16px;
 }
 
 .container-eight .box {
@@ -222,21 +220,21 @@
 /* 9. Evenly Gapped Row, Left-Packed */
 .container-nine {
     display: flex;
-    gap: 16px;
+    gap: 20px;
 }
 
 .container-nine .box {
-  width: 100px;
-  height: 80px;
-  background-color: #ffffff;
-  border: 1px solid #dde3ed;
-  border-bottom: 3px solid #b8c8e8;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
-  color: #b0bdd0;
+    width: 100px;
+    height: 80px;
+    background-color: #ffffff;
+    border: 1px solid #dde3ed;
+    border-bottom: 3px solid #b8c8e8;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #b0bdd0;
 }
 
 /* 10. Right-Aligned, Top-Packed Wrap */
@@ -245,20 +243,20 @@
     flex-wrap: wrap;
     justify-content: flex-end;
     align-content: flex-start;
-    width: 360px;
-    height: 200px;
+    /* width: 360px; for testing
+    height: 200px; for testing */
 }
 
 .container-ten .card {
-  width: 90px;
-  height: 80px;
-  background-color: #ffffff;
-  border: 1px solid #dde3ed;
-  border-bottom: 3px solid #b8c8e8;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
-  color: #b0bdd0;
+    width: 90px;
+    height: 80px;
+    background-color: #ffffff;
+    border: 1px solid #dde3ed;
+    border-bottom: 3px solid #b8c8e8;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #b0bdd0;
 }
