@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    
 }
 
 /* 3. Bottom-Aligned Row */
@@ -50,7 +50,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 /* 9. Evenly Gapped Row, Left-Packed */
@@ -67,68 +67,79 @@
     align-content: flex-start;
 }
 
-/* 11. Layout A */
+/* 11. Layout A
+CSS Flexbox alignment properties: display: flex, justify-content, and align-items. */
 .container {
     display: flex;
     justify-content: center;
-}
-
-/* 12. Layout B */
-.container {
-    display: flex;
-    flex-flow: column;
-}
-
-/* 13. Layout C */
-.container {
-    display: flex;
-    align-items: flex-end;
-}
-
-/* 14. Layout D */
-.container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/* 15. Layout E */
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between; 
-    align-content: space-between;
-}
-
-/* 16. Layout F */
-.container {
-    display: flex;
-    justify-content: space-around;
     align-items: center;
 }
 
-/* 17. Layout G */
+/* 12. Layout B
+CSS Flexbox alignment properties: display: flex, flex-direction, and justify-content. */
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 13. Layout C
+CSS Flexbox alignment properties: display: flex and align-items. */
+.container {
+    display: flex;
+    align-items: center;
+}
+
+/* 14. Layout D
+CSS Flexbox wrapping properties: display: flex and flex-wrap. */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* 15. Layout E
+CSS Flexbox wrapping and multi-line content alignment properties: display: flex, flex-wrap, and align-content. */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+/* 16. Layout F
+CSS Flexbox spacing and vertical alignment properties: display: flex, justify-content, and align-items. */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 17. Layout G
+CSS Flexbox directional properties: display: flex and flex-direction. */
 .container {
     display: flex;
     flex-direction: row-reverse;
 }
 
-/* 18. Layout H */
+/* 18. Layout H
+CSS Flexbox directional and alignment properties: display: flex, flex-direction, and align-items. */
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
 }
 
-/* 19. Layout I */
+/* 19. Layout I
+CSS Flexbox alignment properties: display: flex and align-items. */
 .container {
     display: flex;
 }
 
-/* 20. Layout J */
+/* 20. Layout J
+CSS properties: display: flex, flex-wrap: wrap, justify-content: flex-end. */
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-end;
     align-content: flex-start;
 }
-

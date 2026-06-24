@@ -1,203 +1,157 @@
-[class^="container-"] {
-  background-color: #ffffff;
-  border: none;
-  border-radius: 14px;
-  padding: 24px;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-  gap: 12px;
-  /* broken dashed line */
-  outline: 2px dashed #cbd5e1;
-  outline-offset: -1px;
+/* =========================
+   SHARED STYLES
+========================= */
+
+body {
+    margin: 0;
+    padding: 20px;
+    background: #f8fafc;
+    font-family: Arial, sans-serif;
 }
 
-/* 1. Evenly Spaced Row */
+/* All containers */
+[class^="container-"] {
+    background: #fff;
+    padding: 24px;
+    margin-bottom: 20px;
+    border-radius: 14px;
+    box-sizing: border-box;
+    outline: 2px dashed #cbd5e1;
+    outline-offset: -1px;
+    gap: 12px;
+}
+
+/* Standard box/card appearance */
+.box,
+.card,
+.logo,
+.links,
+.cta {
+    background: #fff;
+    border: 1px solid #dde3ed;
+    border-bottom: 3px solid #b8c8e8;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #b0bdd0;
+}
+
+/* Default boxes */
+.box {
+    width: 100px;
+    height: 80px;
+    font-size: 1rem;
+}
+
+/* Default cards */
+.card {
+    width: 100px;
+    height: 80px;
+    font-size: 1rem;
+}
+
+/* Navbar items */
+.logo {
+    width: 80px;
+    height: 40px;
+    font-size: 0.75rem;
+}
+
+.links {
+    width: 110px;
+    height: 30px;
+    font-size: 0.75rem;
+}
+
+.cta {
+    width: 60px;
+    height: 35px;
+    font-size: 0.75rem;
+}
+
+/* Height variations */
+.short,
+.a {
+    height: 40px;
+}
+
+.medium,
+.c {
+    height: 65px;
+}
+
+.tall,
+.b {
+    height: 100px;
+}
+
+/* Width variations */
+.small {
+    width: 60px;
+}
+
+.wide {
+    width: 140px;
+}
+
+.medium-width {
+    width: 100px;
+}
+
+/* =========================
+   LAYOUTS
+========================= */
+
+/* 1 */
 .container-one {
     display: flex;
     justify-content: space-evenly;
 }
 
-.container-one .box {
-    width: 100px;
-    height: 80px;
-    background-color: #ffffff;
-    border: 1px solid #dde3ed;
-    border-bottom: 3px solid #b8c8e8;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    color: #b0bdd0;
-}
-
-/* 2. Centered Vertical Stack */
+/* 2 */
 .container-two {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
-.container-two .box {
-    width: 100px;
-    height: 80px;
-    background-color: #ffffff;
-    border: 1px solid #dde3ed;
-    border-bottom: 3px solid #b8c8e8;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    color: #b0bdd0;
-}
-
-/* 3. Bottom-Aligned Row */
+/* 3 */
 .container-three {
     display: flex;
     align-items: flex-end;
 }
 
-.container-three .box {
-    width: 100px;
-    background-color: #ffffff;
-    border: 1px solid #dde3ed;
-    border-bottom: 3px solid #b8c8e8;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    color: #b0bdd0;
-}
-
-.box.short {
-    height: 40px;
-}
-
-.box.tall {
-    height: 100px;
-}
-
-.box.medium {
-    height: 65px;
-}
-
-/* 4. Wrapping Card Grid */
+/* 4 */
 .container-four {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
 
-.container-four .card {
-    width: 100px;
-    height: 80px;
-    background-color: #ffffff;
-    border: 1px solid #dde3ed;
-    border-bottom: 3px solid #b8c8e8;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    color: #b0bdd0;
-}
-
-/* 5. Wrapped Rows, Spaced Apart  */
+/* 5 */
 .container-five {
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
-    /* width: 360px; sample for testing
-    height: 220px;   sample for testing */
 }
 
-.container-five .card {
-    width: 155px;
-    height: 80px;
-    background-color: #ffffff;
-    border: 1px solid #dde3ed;
-    border-bottom: 3px solid #b8c8e8;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    color: #b0bdd0;
-}
-
-/* 6. Navbar Pattern */
+/* 6 */
 .container-six {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo {
-    width: 80px;
-    height: 40px;
-    background-color: #ffffff;
-    border: 1px solid #dde3ed;
-    border-bottom: 3px solid #b8c8e8;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.75rem;
-    color: #b0bdd0;
-}
-
-.links {
-    width: 110px;
-    height: 30px;
-    background-color: #ffffff;
-    border: 1px solid #dde3ed;
-    border-bottom: 3px solid #b8c8e8;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.75rem;
-    color: #b0bdd0;
-}
-
-.cta {
-    width: 60px;
-    height: 35px;
-    background-color: #ffffff;
-    border: 1px solid #dde3ed;
-    border-bottom: 3px solid #b8c8e8;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.75rem;
-    color: #b0bdd0;
-}
-
-/* 7. Reversed Order Row */
+/* 7 */
 .container-seven {
     display: flex;
     flex-direction: row-reverse;
 }
 
-.container-seven .box {
-    width: 100px;
-    height: 80px;
-    background-color: #ffffff;
-    border: 1px solid #dde3ed;
-    border-bottom: 3px solid #b8c8e8;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    color: #b0bdd0;
-}
-
-/* 8. Centered Column, Spaced Items */
+/* 8 */
 .container-eight {
     display: flex;
     flex-direction: column;
@@ -205,241 +159,81 @@
     justify-content: space-between;
 }
 
-.container-eight .box {
-    height: 60px;
-    background-color: #ffffff;
-    border: 1px solid #dde3ed;
-    border-bottom: 3px solid #b8c8e8;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    color: #b0bdd0;
-}
+.container-eight .small { width: 60px; }
+.container-eight .medium { width: 100px; height: 60px; }
+.container-eight .wide { width: 140px; height: 60px; }
 
-.box.small {
-    width: 60px;
-}
-
-.box.wide {
-    width: 140px;
-}
-
-.box.medium {
-    width: 100px;
-}
-
-/* 9. Evenly Gapped Row, Left-Packed */
+/* 9 */
 .container-nine {
     display: flex;
     gap: 20px;
 }
 
-.container-nine .box {
-    width: 100px;
-    height: 80px;
-    background-color: #ffffff;
-    border: 1px solid #dde3ed;
-    border-bottom: 3px solid #b8c8e8;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    color: #b0bdd0;
-}
-
-/* 10. Right-Aligned, Top-Packed Wrap */
+/* 10 */
 .container-ten {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     align-content: flex-start;
-    /* width: 360px; for testing
-    height: 200px; for testing */
 }
 
 .container-ten .card {
     width: 90px;
-    height: 80px;
-    background-color: #ffffff;
-    border: 1px solid #dde3ed;
-    border-bottom: 3px solid #b8c8e8;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    color: #b0bdd0;
 }
 
-
-
-/* 11. Layout A */
+/* 11 */
 .container-eleven {
     display: flex;
-    justify-content: center;
-}
-
-.container-eleven .box {
-    width: 100px;
-    height: 80px;
-    background-color: #ffffff;
-    border: 1px solid #dde3ed;
-    border-bottom: 3px solid #b8c8e8;
-    border-radius: 8px;
-    display: flex;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    color: #b0bdd0;
 }
 
-/* 12. Layout A */
+/* 12 */
 .container-twelve {
     display: flex;
-    flex-flow: column;
-}
-
-.container-twelve .box {
-    width: 100px;
-    height: 80px;
-    background-color: #ffffff;
-    border: 1px solid #dde3ed;
-    border-bottom: 3px solid #b8c8e8;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    font-size: 1rem;
-    color: #b0bdd0;
 }
 
-/* 13. */
+/* 13 */
 .container-thirteen {
     display: flex;
     align-items: center;
-}
-
-.container-thirteen .box {
-    width: 100px;
-    background-color: #ffffff;
-    border: 1px solid #dde3ed;
-    border-bottom: 3px solid #b8c8e8;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    color: #b0bdd0;
-}
-
-.box.a {
-    height: 40px;
-}
-
-.box.b {
-    height: 100px;
-}
-
-.box.c {
-    height: 65px;
 }
 
 /* 14 */
 .container-fourteen {
     display: flex;
     flex-wrap: wrap;
-    align-content: space-between;
-     width: 360px; 
-    height: 220px;   
+    width: 360px;
 }
 
 .container-fourteen .card {
-    width: 155px;
-    height: 80px;
-    background-color: #ffffff;
-    border: 1px solid #dde3ed;
-    border-bottom: 3px solid #b8c8e8;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    color: #b0bdd0;
+    width: 110px;
+    margin: 8px;
 }
 
 /* 15 */
-.container-fourteen {
+.container-fifteen {
     display: flex;
     flex-wrap: wrap;
-    align-content: space-between;
-     width: 360px; 
-    height: 220px;   
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    width: 360px;
+    height: 220px;
 }
 
 .container-fifteen .card {
     width: 155px;
-    height: 80px;
-    background-color: #ffffff;
-    border: 1px solid #dde3ed;
-    border-bottom: 3px solid #b8c8e8;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    color: #b0bdd0;
+    height: 80px; /* fixed missing value */
 }
 
-/* 16.  */
+/* 16 */
 .container-sixteen {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-}
-
-.logo {
-    width: 80px;
-    height: 40px;
-    background-color: #ffffff;
-    border: 1px solid #dde3ed;
-    border-bottom: 3px solid #b8c8e8;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.75rem;
-    color: #b0bdd0;
-}
-
-.links {
-    width: 110px;
-    height: 30px;
-    background-color: #ffffff;
-    border: 1px solid #dde3ed;
-    border-bottom: 3px solid #b8c8e8;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.75rem;
-    color: #b0bdd0;
-}
-
-.cta {
-    width: 60px;
-    height: 35px;
-    background-color: #ffffff;
-    border: 1px solid #dde3ed;
-    border-bottom: 3px solid #b8c8e8;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.75rem;
-    color: #b0bdd0;
 }
 
 /* 17 */
@@ -448,94 +242,32 @@
     flex-direction: row-reverse;
 }
 
-.container-seventeen .box {
-    width: 100px;
-    height: 80px;
-    background-color: #ffffff;
-    border: 1px solid #dde3ed;
-    border-bottom: 3px solid #b8c8e8;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    color: #b0bdd0;
-}
-
-/* 18.  */
+/* 18 */
 .container-eighteen {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
 }
 
 .container-eighteen .box {
     height: 60px;
-    background-color: #ffffff;
-    border: 1px solid #dde3ed;
-    border-bottom: 3px solid #b8c8e8;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    color: #b0bdd0;
 }
 
-.box.small {
-    width: 60px;
-}
-
-.box.wide {
-    width: 140px;
-}
-
-.box.medium {
-    width: 100px;
-}
-
-/* 19. */
+/* 19 */
 .container-nineteen {
     display: flex;
-    align-items: flex-start;
-    gap: 20px;
+    
 }
 
-.container-nineteen .box {
-    width: 100px;
-    height: 80px;
-    background-color: #ffffff;
-    border: 1px solid #dde3ed;
-    border-bottom: 3px solid #b8c8e8;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    color: #b0bdd0;
-}
-
-/* 20.  */
+/* 20 */
 .container-twenty {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    align-content: flex-start;
-    width: 360px; 
-    height: 200px; 
+    width: 360px;
+    height: 200px;
 }
 
 .container-twenty .card {
     width: 90px;
-    height: 80px;
-    background-color: #ffffff;
-    border: 1px solid #dde3ed;
-    border-bottom: 3px solid #b8c8e8;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    color: #b0bdd0;
 }
