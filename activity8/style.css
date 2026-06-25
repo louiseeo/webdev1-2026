@@ -57,7 +57,7 @@ body {
     width: 100%;
     max-width: 900px;
     margin: 4px auto;
-    font-family: sans-serif, Arial, Helvetica, sans-serif;
+    
 }
 
 .box {
@@ -196,5 +196,4 @@ body {
     border-radius: 999px;
     font-weight: bold;
     color: #3b5cff;
-    font-family: sans-serif;
 }
