@@ -1,0 +1,308 @@
+/* Universal reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* Base */
+body {
+    font-family: system-ui, sans-serif;
+    color: #1a1a1a;
+    background-color: #FFF8F0
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ─── Navbar ─── */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 56px;
+    border-bottom: 1px solid lightgray;
+}
+
+.navbar__logo {
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: -0.01em;
+}
+
+.navbar__links {
+    display: flex;
+    gap: 40px;
+}
+
+.navbar__links a {
+    font-size: 0.9rem;
+    color: #444;
+    font-weight: 600;
+}
+
+.navbar__links a:hover {
+    color: #1a1a1a;
+}
+
+/* ─── Hero Section ─── */
+.hero {
+    display: flex;
+    gap: 64px;
+    align-items: flex-start;
+    padding: 100px 56px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.hero__text {
+    flex: 1.2;
+}
+
+.hero__panel {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+}
+
+.hero__eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    color: #B6562E;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+.hero__title {
+    font-size: 2.75rem;
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+    margin-bottom: 20px;
+}
+
+.hero__desc {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 32px;
+    max-width: 480px;
+}
+
+/* ─── Button ─── */
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+.contact-btn {
+    background-color: #ffffff;
+    color: #B5613C;
+}
+
+.contact-btn:hover {
+    background-color: lightgray;
+}
+
+/* ─── Info Cards ─── */
+.info-card {
+    padding: 20px 24px;
+    background-color: #ffffff;
+    border: 1px solid #e8e2dc;
+
+}
+
+.info-card--accent {
+    background-color: #B6562E;
+    color: #ffffff;
+}
+
+.info-card--accent .info-card__label {
+    color: #FDCEAB;
+}
+
+.info-card__label {
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    font-weight: 700;
+    color: #A09A92;
+    margin-bottom: 6px;
+}
+
+.info-card__value {
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+/* ─── Skills Section ─── */
+.skills {
+    padding: 80px 56px;
+    max-width: 1140px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.section-eyebrow {
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    font-weight: 700;
+    color: #B6562E;
+    margin-bottom: 10px;
+}
+
+.section-heading {
+    font-size: 1.75rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 36px;
+}
+
+.skills__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background-color: #e0e0e0;
+    border: 1px solid #e0e0e0;
+}
+
+.skill-card {
+    background-color: #ffffff;
+    padding: 32px 28px;
+}
+
+.skill-card--wide {
+    grid-column: span 2;
+}
+
+.skill-card__number {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #616161;
+    letter-spacing: 0.08em;
+    margin-bottom: 16px;
+}
+
+.skill-card__name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skill-card__desc {
+    font-size: 0.875rem;
+    line-height: 1.65;
+    color: #5E5E5E;
+}
+
+/* ─── Contact Section ─── */
+.contact {
+    background-color: #1A1A1A;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 56px;
+}
+
+.contact__eyebrow {
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    font-weight: bold;
+    color: #D1B7A7;
+    margin-bottom: 16px;
+}
+
+.contact__heading {
+    font-size: 2.25rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: #FEFEFE;
+    margin-bottom: 50px;
+}
+
+.contact__desc {
+    font-size: 1rem;
+    line-height: 1.2;
+    color: lightgray;
+    margin-bottom: 40px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ─── Footer ─── */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 56px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer__copy {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.footer__links {
+    display: flex;
+    gap: 40px;
+}
+
+.footer__links a {
+    font-size: 0.85rem;
+    color: #797873;
+}
+
+.footer__links a:hover {
+    color: #1a1a1a;
+}
+
+/* 
+Checkpoint 1: 
+    I have used the "turn children into a row" property (display: flex) in two different places 
+    because it is only relevant to an element's direct children. The header has two direct 
+    children: the logo and the nav element. Inside the nav, the .navbar__links list has its own 
+    children. Since display: flex only affects an element's direct children, I had to apply it 
+    again to .navbar__links to arrange the navigation links in a row.
+
+Checkpoint 2:
+    The three info cards are already stacked vertically as <div> elementsare block level elements. 
+    I kept display: flex and flex-direction: column on .hero__panel so I could set the gap property 
+    to have consistent spacing between the cards. Without a flex container, I would have to apply 
+    margin-bottom to each card which is less clean and harder to maintain. The use of gap makes the 
+    layout easier and more orderly.   
+
+Checkpoint 3:
+    If I tried to get this "two wide, two narrow, 3-column" layout by usingFlexbox I'd have 
+    to explicitly specify the width of each card in px or %. This works, but is inflexible. 
+    For example, if I wanted to make cards 02 and 04 the wide ones instead, I'd have to 
+    change all of the HTML classes and update CSS widths for those cards. With CSS Grid, it’s 
+    a lot easier. All I need to do is add or remove the .skill-card--wide class and 
+    grid-column: span 2 automatically makes the card wider and the grid rearranges the layout 
+    for me. Grid also neatly lines up all the cards into columns across each row, which Flexbox 
+    isn’t able to do, because it doesn’t share columns from one row to the next.
+
+Checkpoint 4:
+    The contact section doesn’t need display: flex because its children are already stacked 
+    vertically. Flexbox can change the default vertical layout to a horizontal layout. The 
+    contact section already stacks the paragraphs and link on top of each other by default 
+    which is the layout I'm aiming for. Text-align: center is enough for centering the text, 
+    it centers the text in each element. I don't have to line things up in a row, separate 
+    them or control their widths. Flexbox would only complicate the code and serve no purpose.
+ */
