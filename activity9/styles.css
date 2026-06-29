@@ -49,10 +49,6 @@ ul {
     font-weight: 600;
 }
 
-.navbar__links a:hover {
-    color: #1a1a1a;
-}
-
 /* ─── Hero Section ─── */
 .hero {
     display: flex;

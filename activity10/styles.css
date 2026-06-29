@@ -15,7 +15,7 @@ body {
 
 a {
     text-decoration: none;
-    color: inherit;
+    /* color: inherit; */
 }
 
 ul {
@@ -24,10 +24,7 @@ ul {
 
 /* ─── Navbar ─── */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 28px 56px;
+    padding: 28px 24px;
     border-bottom: 1px solid lightgray;
 }
 
@@ -36,28 +33,23 @@ ul {
     font-size: 1.1rem;
     letter-spacing: -0.01em;
     font-family: 'Space Grotesk', sans-serif;
+    margin-bottom: 12px;
+
 }
 
 .navbar__links {
-    display: flex;
-    gap: 40px;
+   
 }
 
 .navbar__links a {
     font-size: 0.9rem;
     color: #444;
     font-weight: 600;
-}
-
-.navbar__links a:hover {
-    color: #1a1a1a;
+    margin-right: 16px;
 }
 
 /* ─── Hero Section ─── */
 .hero {
-    display: flex;
-    gap: 64px;
-    align-items: flex-start;
     padding: 100px 56px;
     max-width: 1140px;
     margin: 0 auto;
