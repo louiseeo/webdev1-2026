@@ -15,8 +15,14 @@
 
 <body>
     <!-- Header section -->
-    <header class="navbar">
-        <p class="navbar__logo">Maya Cruz</p>
+<header class="navbar">
+    <p class="navbar__logo">Maya Cruz</p>
+
+    <div class="navbar__menu">
+        <button class="navbar__toggle" aria-label="Toggle menu">
+            ☰
+        </button>
+
         <nav>
             <ul class="navbar__links">
                 <li><a href="#about">About</a></li>
@@ -24,7 +30,8 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
+</header>
 
     <main>
         <!-- Hero section -->
@@ -116,6 +123,15 @@
             <li><a href="#">Twitter</a></li>
         </ul>
     </footer>
+
+    <script>
+        const toggleBtn = document.querySelector('.navbar__toggle');
+        const navLinks = document.querySelector('.navbar__links');
+
+        toggleBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('is-open');
+        });
+    </script>
 
 </body>
 
