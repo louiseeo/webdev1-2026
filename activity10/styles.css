@@ -23,12 +23,13 @@ ul {
 
 /* ─── Navbar ─── */
 .navbar {
-      display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    /* ADD THIS */
     padding: 28px 24px;
     border-bottom: 1px solid lightgray;
-    text-align: center;
 }
 
 .navbar__logo {
@@ -36,12 +37,11 @@ ul {
     font-size: 1.1rem;
     letter-spacing: -0.01em;
     font-family: 'Space Grotesk', sans-serif;
-    margin-bottom: 0px;
 }
 
 .navbar__toggle {
     display: block;
-margin-left: auto;
+    margin-left: auto;
     font-size: 24px;
     background: none;
     border: none;
@@ -54,12 +54,13 @@ margin-left: auto;
 }
 
 nav {
-    margin-left: auto;
+    width: 100%;
 }
 
 .navbar__links.is-open {
     display: flex;
     flex-direction: column;
+
 }
 
 .navbar__links a {
@@ -187,8 +188,7 @@ nav {
     font-family: 'Space Grotesk', sans-serif;
 }
 
-.skills__grid {
-}
+.skills__grid {}
 
 .skill-card {
     background-color: #ffffff;
@@ -286,12 +286,16 @@ nav {
 
 /* Tablet Breakpoint */
 @media (min-width: 640px) {
+    nav {
+        width: auto;
+    }
+
     .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-}
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
 
     .navbar__logo {
         margin-bottom: 0;
@@ -306,12 +310,10 @@ nav {
         display: none;
     }
 
-
-
     .skills__grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 20x;
+        gap: 20px;
         border: 1px solid #e0e0e0;
     }
 
@@ -389,17 +391,29 @@ nav {
     }
 
 }
+ 
+/*
 
-/* 
 Checkpoint 1: 
-    
+The skills section surprised me the most because I expected it 
+would need a lot of layout CSS on mobile. After removing the 
+desktop grid, I realized the cards already stacked neatly in 
+a single column by default. This showed me that sometimes the 
+browser's default layout is already the best starting point 
+for a mobile-first design.
 
 Checkpoint 2:
-    
+Choosing breakpoints based only on common device sizes can make
+a layout look awkward on screens that don't match those exact 
+dimensions. It is better to choose breakpoints based on when the 
+content starts to feel cramped or has too much empty space, so 
+the design stays responsive across many different screen sizes.
 
 Checkpoint 3:
-  
-
-Checkpoint 4:
+CSS media queries can only respond to changes in the screen or 
+device, such as the viewport width. A button click is a user 
+interaction, and CSS alone cannot remember or toggle that state. 
+JavaScript is needed to detect the click and add or remove the 
+class that shows or hides the navigation menu.
 
 */
