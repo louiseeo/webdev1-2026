@@ -22,14 +22,22 @@ ul {
 }
 
 /* ─── Navbar ─── */
+/* I added the flex properties back to the .navbar to make the
+ menu icon aligned with the logo. Without it, the button will 
+ fall below the logo. Using transform can be a hack but I 
+ did not use it because it is not adaptable. */
 .navbar {
+    padding: 28px 24px;
+    border-bottom: 1px solid lightgray;
+    position: relative;
+    background-color: #FFF8F0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    /* ADD THIS */
-    padding: 28px 24px;
-    border-bottom: 1px solid lightgray;
+}
+
+.navbar:has(.navbar__links.is-open) {
+    border-bottom-color: transparent;
 }
 
 .navbar__logo {
@@ -53,14 +61,17 @@ ul {
     display: none;
 }
 
-nav {
-    width: 100%;
-}
-
 .navbar__links.is-open {
     display: flex;
     flex-direction: column;
-
+    gap: 20px;
+    padding: 0px 20px 24px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    background-color: #FFF8F0;
 }
 
 .navbar__links a {
@@ -265,7 +276,7 @@ nav {
 .footer {
     padding: 28px 24px;
     border-top: 1px solid #e0e0e0;
-    color: #7E7B76;
+    color: #6B6663;
     text-align: center;
 }
 
@@ -278,6 +289,7 @@ nav {
     display: flex;
     justify-content: center;
     gap: 14px;
+    font-weight: 400;
 }
 
 .footer__links a {
@@ -286,21 +298,6 @@ nav {
 
 /* Tablet Breakpoint */
 @media (min-width: 640px) {
-    nav {
-        width: auto;
-    }
-
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        text-align: left;
-    }
-
-    .navbar__logo {
-        margin-bottom: 0;
-    }
-
     .navbar__links {
         display: flex;
         gap: 40px;
@@ -336,10 +333,6 @@ nav {
 
 /* Desktop Breakpoint */
 @media (min-width: 900px) {
-    .navbar__logo {
-        margin-bottom: 0;
-    }
-
     .navbar__links {
         gap: 40px;
     }
@@ -391,9 +384,8 @@ nav {
     }
 
 }
- 
-/*
 
+/*
 Checkpoint 1: 
 The skills section surprised me the most because I expected it 
 would need a lot of layout CSS on mobile. After removing the 
@@ -415,5 +407,4 @@ device, such as the viewport width. A button click is a user
 interaction, and CSS alone cannot remember or toggle that state. 
 JavaScript is needed to detect the click and add or remove the 
 class that shows or hides the navigation menu.
-
 */
