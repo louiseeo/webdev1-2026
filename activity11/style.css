@@ -1,0 +1,549 @@
+/* Root Variables */
+:root {
+    --bg: #0a0f1e;
+    --bg-card: #111827;
+    --text: #f5f0e8;
+    --muted: #8892a4;
+    --accent: #4affa4;
+    --border: rgba(255,255,255,0.08);
+    --radius: 12px;
+    --font-body: 'Inter', sans-serif;
+}
+
+/* Page Defaults */
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    line-height: 1.6;
+}
+
+/* ------------- Mobile Base -------------  */
+/* Page Wrapper */
+.container {
+    width: 90%;
+    max-width: 1120px;
+    margin-inline: auto;
+}
+
+/* Navigation Bar */
+.nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Desktop Nav Links */
+.nav-links {
+    display: none;
+}
+
+/* Hamburger Button */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Mobile Dropdown Menu */
+.mobile-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+}
+
+/* Hero Section */
+.hero {
+    padding: 100px 0 80px;
+    text-align: center;
+}
+
+/* Hero Heading */
+.hero h1 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    line-height: 1.08;
+}
+
+/* Hero Button Group */
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+/* Generic Button Style */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 22px;
+    border-radius: 8px;
+}
+
+/* Features Grid (Cards) */
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+/* Individual Feature Card */
+.feature-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    padding: 32px 28px;
+}
+
+/* Curriculum Layout Wrapper */
+.curriculum-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+/* Accordion Item Header */
+.acc-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 20px;
+}
+
+/* Accordion Body (Collapsible Content */
+.acc-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+/* Call-To-Action Strip */
+.cta-strip {
+    border-radius: 20px;
+    padding: 40px 24px;
+    text-align: center;
+}
+
+/* Footer */
+.footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+/* ------- Large Screen Pivot (Media Query) */
+@media (min-width: 1024px) {
+    /* Desktop Nav Links */
+    .nav-links {
+        display: flex;
+    }
+
+    /* Hamburger Button */
+    .hamburger {
+        display: none;
+    }
+
+    /* Mobile Dropdown Menu */
+    .mobile-menu {
+        display: none !important;
+    }
+
+    /* Features Grid (Cards) */
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Curriculum Layout Wrapper */
+    .curriculum-layout {
+        grid-template-columns: 1fr 1fr;
+        gap: 56px;
+    }
+
+    /* CTA Strip */
+    .cta-strip {
+        padding: 64px 48px;
+    }
+
+
+    /* ===== NOT IN INSTRUCTIONS — added to fill visual gaps ===== */
+
+
+
+
+/* Missing entirely — Sticky Navbar Wrapper */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+}
+
+
+/* Missing from Hamburger Button — the 3 bars themselves */
+.hamburger span {
+    width: 22px;
+    height: 2px;
+    background: var(--text);
+    border-radius: 2px;
+}
+
+/* Missing — reset default button styling on hamburger */
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+}
+
+
+/* Missing from Mobile Dropdown Menu */
+.mobile-menu {
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+}
+
+
+/* Missing from Generic Button — color/background never given */
+.btn {
+    font-weight: 600;
+    text-decoration: none;
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--border);
+}
+
+/* Missing entirely — filled variant for primary CTAs (add class="btn btn-primary") */
+.btn-primary {
+    background: var(--accent);
+    color: var(--bg);
+    border: none;
+}
+
+
+/* Missing entirely — Accordion item card + reset button styling on header */
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.acc-item {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.acc-header {
+    width: 100%;
+    align-items: center;
+    background: none;
+    border: none;
+    color: var(--text);
+    cursor: pointer;
+    text-align: left;
+}
+
+
+/* Missing from CTA Strip */
+.cta-strip {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+}
+
+/* ===== NOT IN INSTRUCTIONS — extra visual details from reference image ===== */
+
+/* Logo */
+.logo {
+    font-weight: 800;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--text);
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+/* Nav links */
+.nav-links {
+    list-style: none;
+    gap: 32px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--muted);
+}
+
+/* Tag / pill badge (FREE BEGINNER COURSE, WHY BUILDWEB, etc.) */
+.tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    background: rgba(74, 255, 164, 0.1);
+    border: 1px solid rgba(74, 255, 164, 0.25);
+    border-radius: 999px;
+    padding: 4px 12px;
+    margin-bottom: 20px;
+}
+
+/* Hero em — the green colored word */
+.hero h1 em {
+    color: var(--accent);
+    font-style: normal;
+}
+
+/* Hero paragraph */
+.hero p {
+    color: var(--muted);
+    max-width: 520px;
+    margin-inline: auto;
+    margin-bottom: 32px;
+}
+
+/* Breakpoint visualizer card */
+.bp-viz {
+    margin-top: 48px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px;
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+.bp-viz-header {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.bp-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.bp-dot.red    { background: #ff5f57; }
+.bp-dot.yellow { background: #febc2e; }
+.bp-dot.green  { background: #28c840; }
+
+.bp-viz-label {
+    margin-left: auto;
+    color: var(--muted);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+}
+
+.bp-track {
+    height: 8px;
+    background: var(--border);
+    border-radius: 99px;
+    margin-bottom: 12px;
+}
+
+.bp-fill {
+    width: 60%;
+    height: 100%;
+    background: var(--accent);
+    border-radius: 99px;
+}
+
+.bp-markers {
+    display: flex;
+    justify-content: space-between;
+    color: var(--muted);
+    font-size: 0.7rem;
+    margin-bottom: 16px;
+}
+
+.bp-code {
+    background: var(--bg);
+    border-radius: 8px;
+    padding: 14px;
+    font-family: monospace;
+    font-size: 0.78rem;
+    line-height: 1.7;
+    color: var(--muted);
+}
+
+.code-keyword  { color: #c792ea; }
+.code-selector { color: #82aaff; }
+.code-property { color: #80cbc4; }
+.code-value    { color: var(--accent); }
+.code-comment  { color: #546e7a; }
+
+/* Social Proof Strip */
+.proof {
+    text-align: center;
+    padding: 40px 0;
+    color: var(--muted);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+}
+
+.proof-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--bg);
+    font-size: 0.7rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.proof-text {
+    color: var(--text);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-left: 8px;
+}
+
+/* Features section heading */
+.section-heading {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.section-heading p {
+    color: var(--muted);
+}
+
+/* Feature card icon box */
+.feature-icon {
+    font-size: 1.4rem;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.feature-card h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.feature-card p {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+/* Curriculum section spacing */
+.curriculum {
+    padding: 80px 0;
+}
+
+.curriculum-info .tag {
+    margin-bottom: 16px;
+}
+
+.curriculum-info p {
+    color: var(--muted);
+    margin-bottom: 32px;
+}
+
+/* Stat row */
+.stat-row {
+    display: flex;
+    gap: 32px;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--accent);
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: var(--muted);
+}
+
+/* Accordion inner content */
+.acc-body-inner {
+    padding: 0 20px 20px;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.acc-body-inner ul {
+    padding-left: 16px;
+    margin-top: 8px;
+}
+
+.acc-number {
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 0.85rem;
+    margin-right: 12px;
+}
+
+.acc-title {
+    flex: 1;
+    font-weight: 600;
+}
+
+.acc-chevron {
+    color: var(--muted);
+}
+
+/* CTA actions */
+.cta-actions {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 24px;
+}
+
+/* Footer spacing */
+.footer-inner {
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0;
+    color: var(--muted);
+    font-size: 0.85rem;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
+.footer-links a {
+    color: var(--muted);
+    text-decoration: none;
+}
+
+/* Section spacing */
+.features {
+    padding: 80px 0;
+}
+
+.cta-strip {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+}
