@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="s.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -54,14 +54,14 @@
             <div class="container">
                 <span class="tag">FREE BEGINNER COURSE</span>
 
-                <h1>Build sites that work on<em>every screen.</em></h1>
+                <h1>Build sites that work on <em>every screen.</em></h1>
 
                 <p>Master HTML5, CSS3, and responsive design from scratch —
                     with real projects, live code, and zero fluff.</p>
 
                 <div class="hero-actions">
-                    <a class="btn" href="#">Start Learning Free ➝</a>
-                    <a class="btn" href="#">View Curriculum></a>
+                    <a class="btn btn-primary" href="#">Start Learning Free ➝</a>
+                    <a class="btn" href="#">View Curriculum</a>
                 </div>
 
                 <div class="bp-viz">
@@ -84,15 +84,15 @@
                     </div>
 
                     <div class="bp-code">
-                        <span class="code-comment">/* CSS you'll write in Lesson 4 */</span>
-                        <span class="code-rule"><span class="code-keyword">@media</span> (max-width: 640px) {</span><br>
-                        &nbsp;&nbsp;<span class="code-selector">.grid</span> { <span
-                            class="code-property">grid-template-columns</span>: <span class="code-value">1fr</span>;
-                        }<br>
-                        }
+                        <span class="code-comment">/* CSS you'll write in Lesson 4 */</span> <br>
+                        <span class="code-rule"><span class="code-keyword">@media</span> (max-width: <span
+                            class="code-value">640px</span>) {<br>
+                            &nbsp;&nbsp; .grid { grid-template-columns: <span class="code-value">1fr</span>;
+                            }<br>} 
+                        </span>
                     </div>
                 </div>
-            </div>
+                </div>
         </section>
 
         <!-- Social Proof Strip -->
@@ -104,17 +104,17 @@
                 <div class="avatar">KL</div>
                 <div class="avatar">AP</div>
                 <div class="avatar">TN</div>
-                <div class="proof-text">2,400+ students enrolled</div>
+                <div class="proof-text"><span>2,400+</span> students already enrolled</div>
             </div>
         </div>
 
         <!-- Features Section -->
         <section class="features" id="features">
-            <section class="section-heading">
+            <div class="section-heading">
                 <span class="tag">WHY BUILDWEB</span>
                 <h2>Everything you need to start Building</h2>
                 <p>No frameworks, no jargon — just the fundamentals that actually stick.</p>
-            </section>
+            </div>
 
             <div class="features-grid">
                 <div class="feature-card">
@@ -133,7 +133,7 @@
                 <div class="feature-card">
                     <div class="feature-icon">⚡</div>
                     <h3>Instant Feedback</h3>
-                    <p>See changes live in your browser as you type. No waiting. no builds — just you and the code.</p>
+                    <p>See changes live in your browser as you type. No waiting, no builds — just you and the code.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🧩</div>
@@ -312,7 +312,7 @@
                 Free forever for the core curriculum. No credit card, no setup — open your browser and go.
             </p>
             <div class="cta-actions">
-                <a href="#" class="btn">Start Free Now ➝</a>
+                <a href="#" class="btn btn-primary">Start Free Now ➝</a>
                 <a href="#" class="btn">See Full Curriculum</a>
             </div>
         </div>
