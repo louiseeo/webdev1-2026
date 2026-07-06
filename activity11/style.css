@@ -60,12 +60,16 @@ ul {
 
 /* ------------- Mobile Base -------------  */
 /* Nav part*/
-nav {
+header.navbar {
     position: sticky;
     top: 0;
     z-index: 1000;
     background: var(--bg);
     border-bottom: 1px solid var(--border);
+}
+
+nav {
+    background: transparent;
 }
 
 /* Hide nav buttons on mobile */
@@ -75,6 +79,16 @@ nav {
 
 /* Page Wrapper */
 .container {
+    width: 90%;
+    max-width: 1120px;
+    margin-inline: auto;
+}
+
+/* Match section width to header/footer */
+.features,
+.curriculum,
+.cta-strip,
+.proof {
     width: 90%;
     max-width: 1120px;
     margin-inline: auto;
@@ -593,7 +607,7 @@ nav {
     text-align: center;
 
     border: 1px solid var(--border);
-    margin: 30px 30px 100px;
+    margin: 30px auto 100px;
     background:
         radial-gradient(ellipse at 50% 0%, rgba(74, 255, 164, 0.08) 0%, transparent 70%),
         var(--bg-card);
