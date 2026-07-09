@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprout | Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <svg style="display:none">
+        <symbol id="icon-grid" viewBox="0 0 24 24">
+            <rect x="3" y="3" width="7" height="7" />
+            <rect x="14" y="3" width="7" height="7" />
+            <rect x="3" y="14" width="7" height="7" />
+            <rect x="14" y="14" width="7" height="7" />
+        </symbol>
+        <symbol id="icon-plot" viewBox="0 0 24 24">
+            <path d="M12 21c-4-3-7-6.5-7-10a7 7 0 0 1 14 0c0 3.5-3 7-7 10Z" />
+            <circle cx="12" cy="11" r="2.5" />
+        </symbol>
+        <symbol id="icon-members" viewBox="0 0 24 24">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2" />
+            <circle cx="10" cy="7" r="4" />
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+        </symbol>
+        <symbol id="icon-waitlist" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="9" />
+            <path d="M12 7v5l3 3" />
+        </symbol>
+        <symbol id="icon-bell" viewBox="0 0 24 24">
+            <path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9" />
+            <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+        </symbol>
+        <symbol id="icon-search" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="7" />
+            <path d="m21 21-4.3-4.3" />
+        </symbol>
+        <symbol id="icon-plus" viewBox="0 0 24 24">
+            <path d="M12 5v14M5 12h14" />
+        </symbol>
+        <symbol id="icon-droplet" viewBox="0 0 24 24">
+            <path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11Z" />
+        </symbol>
+        <symbol id="icon-seed" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="9" stroke-dasharray="3 3" />
+            <path d="M12 8v8M8 12h8" />
+        </symbol>
+    </svg>
+
+
+    <aside class="sidebar">
+        <div class="logo"><span class="dot"></span>Sprout</div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">
+                        <svg class="icon">
+                            <use href="#icon-grid"/>
+                        </svg>
+                        Dashboard</a></li>
+                <li><a href="#">
+                        <svg class="icon">
+                            <use href="#icon-plot"/>
+                        </svg>
+                        Plots</a></li>
+                <li><a href="#">
+                        <svg class="icon">
+                            <use href="#icon-members"/>
+                        </svg>Members</a></li>
+                <li><a href="#"><svg class="icon">
+                            <use href="#icon-waitlist"/>
+                        </svg>Waitlist</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <span class="avatar" style="background: var(--avatar-basil);">JP</span>
+            <div class="who">
+                <strong>Jade Pinon</strong>
+                <span>Garden Manager</span>
+        </div>
+        </div>
+    </aside>
+
+    <main class="main">
+        <header class="topbar">
+            <div class="logo"><span class="dot"></span>Sprout</div>
+            <div class="topbar-search">
+                <svg class="icon"><use href="#icon-search"/></svg>
+                <input type="text" name="keyword" id="search" placeholder="Search plots or members...">
+            </div>
+            <div class="topbar-actions">
+                <button class="icon-btn" aria-label="Notifications"><svg class="icon"><use href="#icon-bell"/></svg><span class="badge">7</span></button>
+                <button class="btn-add"><svg class="icon"><use href="#icon-plus"/></svg>Add member</button>
+                <span class="avatar" style="background: var(--avatar-basil);">JP</span>
+            </div>
+        </header>
+        <div class="content" id="content">
+            <!-- TODO -->
+
+            <!-- <button id="abcd">Click me</button> -->
+        </div>
+    </main>
+
+    <nav class="tab-bar">
+        <a data-page="dashboard" href="#" class="active"><svg class="icon"><use href="#icon-grid"/></svg>Dashboard</a>
+        <a data-page="plots" href="#"><svg class="icon"><use href="#icon-plot"/></svg>Plots</a>
+        <a data-page="members" href="#"><svg class="icon"><use href="#icon-members"/></svg>Members</a>
+        <a data-page="waitlist" href="#"><svg class="icon"><use href="#icon-waitlist"/></svg>Waitlist</a>
+    </nav>
+
+    <script src="app.js"></script>
+</body>
+</html>
