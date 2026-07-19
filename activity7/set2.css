@@ -1,0 +1,67 @@
+/* SET 2 ACTIVITY */
+/* 1. Layout A: CSS Flexbox properties: display: flex, justify-content, and align-items. */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 2. Layout B: CSS Flexbox properties: display: flex, and flex-direction. */
+.container {              
+    display: flex;
+    flex-direction: column; 
+} 
+ 
+/* 3. Layout C: CSS Flexbox properties: display: flex and align-items. */
+.container {
+    display: flex;
+    align-items: center;
+}
+
+/* 4. Layout D: CSS Flexbox properties: display: flex and flex-wrap. */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* 5. Layout E: CSS Flexbox properties: display: flex, flex-wrap, justify-content, and align-content. */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+/* 6. Layout F: CSS Flexbox properties: display: flex, justify-content, and align-items. */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 7. Layout G: CSS Flexbox properties: display: flex and flex-direction. */
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* 8. Layout H: CSS Flexbox properties: display: flex, flex-direction, align-items, and justify-content. */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* 9. Layout I: CSS Flexbox properties: display: flex */
+.container {
+    display: flex;
+}
+
+/* 10. Layout J: CSS flexbox properties: display: flex, flex-wrap, justify-content, and align-content. */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: flex-start;
+}

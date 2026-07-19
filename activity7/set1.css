@@ -1,0 +1,69 @@
+/* SET 1 ACTIVITY */
+/* 1. Evenly Spaced Row */
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* 2. Centered Vertical Stack */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+/* 3. Bottom-Aligned Row */
+.container {
+    display: flex;
+    align-items: flex-end;
+}
+
+/* 4. Wrapping Card Grid */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* 5. Wrapped Rows, Spaced Apart  */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+/* 6. Navbar Pattern */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 7. Reversed Order Row */
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* 8. Centered Column, Spaced Items */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* 9. Evenly Gapped Row, Left-Packed */
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+/* 10. Right-Aligned, Top-Packed Wrap */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: flex-start;
+}
